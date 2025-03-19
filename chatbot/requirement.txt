@@ -1,0 +1,13 @@
+django
+djangorestframework
+google-generativeai
+gtts
+django-cors-headers
+pymongo
+textblob
+nltk
+spacy 
+pyttsx3
+speechrecognition
+django.urls
+spacy  
