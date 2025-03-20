@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .chat-section {
+            background-color:#f6b704;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .info-section h4 {
+            font-weight: bold;
+        }
+
+        .info-section a {
+            color: #3f74f7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar starts -->
+    <div >
+      <nav style="font-size: large; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;" class="navbar navbar-expand-lg navbar-light bg-light">
+          <div>
+              <label style="font-weight: bold; padding-left: 20px;" href="#">Voice AI</label>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul style="padding-left: 200px;" class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="UI.html">Home</a>
+                  </li>
+                  <li style="padding-left: 20px;" class="nav-item">
+                      <a class="nav-link" href="#resource-section">Resources</a>
+                  </li>
+                  <li style="padding-left: 30px;" class="nav-item">
+                      <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+                  <li style="padding-left: 50px;" class="nav-item">
+                      <a class="nav-link" href="#Community-section">Community</a>
+                  </li>
+                  <a href="loginui.html" class="btn btn-warning" style="margin-left: 150px; border-radius: 30px; font-weight: 500; width: 150px;">Register / Login</a>
+              </ul>
+          </div>
+      </nav>
+  </div>
+     <!-- navbar ends -->
+
+    <div style="margin-top: 30px;" class="container py-5">
+        <div class="row align-items-center chat-section">
+            <!-- Left Column -->
+            
+             <div class="col-md-6 info-section">
+                 <h2>Contact Us</h2>
+                <p>We’d love to hear from you. Please fill out the form below and we’ll get back to you as soon as possible.</p>
+                <form>
+                    <div class="row g-3">
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <!-- Address -->
+                        <div class="col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                        </div>
+                        <!-- Mobile Number -->
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                        </div>
+                        <!-- Message -->
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-light mt-3 px-5">Submit</button>
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="chat-box">
+                    <img src="Contact us.gif" alt="Innovation Animation" style="width: 100%; border-radius: 15px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer starts -->
+    <footer class="text-center text-lg-start text-white" style="background-color: black"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">
+        Company name
+      </h6>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore tempora, voluptatum doloribus non ullam reiciendis quo, nostrum, ut quae aut numquam dolorum totam aspernatur asperiores nam eius dolor dicta?
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+      <p>
+        <a class="text-white">MDBootstrap</a>
+      </p>
+      <p>
+        <a class="text-white">MDWordPress</a>
+      </p>
+      <p>
+        <a class="text-white">BrandFlow</a>
+      </p>
+      <p>
+        <a class="text-white">Bootstrap Angular</a>
+      </p>
+    </div> -->
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-1 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold"> Useful links</h6>
+      <p><a href="UI.html" class="text-light">Home</a></p>
+    
+      <p>
+        <a href="signup.html" class="text-light">Register</a>
+      </p>
+      <p>
+        <a href="help.html" class="text-light">Help</a>
+      </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+      <p><i class="fas fa-home mr-3"></i> City, NY 10012 Street, India</p>
+      <p><i class="fas fa-envelope mr-3"></i> dummy@prushal.com</p>
+      <p><i class="fas fa-phone mr-3"></i> +01 23456788</p>
+      <p><i class="fas fa-print mr-3"></i> +01 23456789</p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-7 col-lg-8 text-center text-md-start">
+    
+      <div class="p-3"> © 2020 Copyright:
+        <a class="text-white" href="">dummy@prushal.com</a>
+      </div>
+ 
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+    
+      <a
+         class="btn btn-outline-light btn-floating m-2"
+         class="text-white"
+         role="button"><i class="fab fa-facebook-f"></i></a>
+
+      <a
+         class="btn btn-outline-light btn-floating m-2"
+         class="text-white"
+         role="button"><i class="fab fa-twitter"></i></a>
+
+      <a
+         class="btn btn-outline-light btn-floating m-2"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-google"></i ></a>
+
+      <a
+         class="btn btn-outline-light btn-floating m-2"
+         class="text-white"
+         role="button"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
+    
+
+<!-- footer ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

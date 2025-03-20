@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .pricing-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-card .btn {
+            margin-top: 15px;
+        }
+
+        .popular {
+            border-color: #f6c732;
+        }
+
+        .popular .badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f6c732;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+ 
+    <div class="row g-4">
+        <!-- Free Plan -->
+        <div class="col-md-4">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <div class="price">$0 <span class="fs-6">USD/month</span></div>
+                <p>Explore how AI can help you with everyday tasks</p>
+                <button class="btn btn-secondary w-100" disabled>Your current plan</button>
+                <ul style="text-align: left;" class="list-unstyled mt-3">
+                    <li>✔ Access to VoiceBot mini</li>
+                    <li>✔ Standard voice chats</li>
+                    <li>✔ Limited access to AI</li>
+                    <li>✔ Limited access to advanced features</li>
+                    <li>✔ Use custom GPTs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Plus Plan -->
+        <div class="col-md-4">
+            <div class="pricing-card popular">
+               
+                <h3>Plus</h3>
+                <div class="price">$20 <span class="fs-6">USD/month</span></div>
+                <p>Level up productivity and creativity with expanded access</p>
+                <button class="btn btn-warning w-100">Get Plus</button>
+                <ul style="text-align: left;" class="list-unstyled mt-3">
+                    <li>✔ Everything in Free</li>
+                    <li>✔ Extended limits on messaging and file uploads with upgraded features</li>
+                    <li>✔ Access to advanced voice </li>
+                    <li>✔ Opportunities to test new features</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="col-md-4">
+            <div class="pricing-card">
+                <h3>Pro</h3>
+                <div class="price">$200 <span class="fs-6">USD/month</span></div>
+                <p>Get the best of OpenAI with the highest level of access</p>
+                <button class="btn btn-dark w-100">Get Pro</button>
+                <ul style="text-align: left;" class="list-unstyled mt-3">
+                    <li>✔ Everything in Plus</li>
+                    <li>✔ Unlimited access to GPT models</li>
+                    <li>✔ Higher limits for advanced voice </li>
+                    <li>✔ Access to pro mode for best answers</li>
+                    <li>✔ Opportunities to test new features</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

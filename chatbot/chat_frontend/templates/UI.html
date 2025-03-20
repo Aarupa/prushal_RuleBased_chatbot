@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Frank+Ruhl+Libre:wght@300..900&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+    .navbar-nav .nav-item {  
+  margin-right: 20px;
+  /* padding-left: 5px; */
+  border-radius: 45px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: space-between;
+    }
+    .text-frank {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 900;
+  font-size: 40px;
+  width: 80%; /* Adjust weight as needed */
+  padding-left: 8%;
+}
+ 
+/* Animated Heading Styles */
+.animated-heading {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    height: 100px;
+}
+
+.animated-heading .static-text {
+    color:#f6b704 ;
+}
+
+.animated-heading .dynamic-text {
+    display: inline-block;
+    color: black;
+    animation: zoom-out 6s infinite;
+}
+
+@keyframes zoom-out {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.stats-section {
+            background-color: white;
+            padding: 30px 10px;
+        }
+
+        .stats-item {
+            text-align: center;
+            padding: 0px 5px;
+        
+        }
+
+        .stats-item h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #f6b704, #f56af7);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .stats-item p {
+            font-size: 1.4rem;
+            color: #333;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .divider {
+            height: 60px;
+            width: 1px;
+            background-color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .divider {
+                display: none;
+            }
+        }
+        /* .chat-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        } */
+
+        .info-section h4 {
+            font-weight: bold;
+        }
+
+        .info-section a {
+            color: #3f74f7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .info-section a:hover {
+            text-decoration: underline;
+        }
+        .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .solution-card {
+      text-align: center;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      
+    }
+    .solution-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background-color:white;
+    }
+    .solution-card-icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .highlighted-card {
+      background-color: black;
+      color: #fff;
+    }
+    .highlighted-card a {
+      color: #fff !important;
+    }
+    .solution-card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .solution-card a:hover {
+      text-decoration: underline;
+    }
+    .title-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+</style>
+<body>
+  <!-- navbar starts -->
+  <div >
+    <nav style="font-size: large; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div>
+            <label style="font-weight: bold; padding-left: 20px;">Voice AI</label>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul style="padding-left: 200px;" class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li style="padding-left: 20px;" class="nav-item">
+                    <a class="nav-link" href="#resource-section">Resources</a>
+                </li>
+                <li style="padding-left: 30px;" class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li style="padding-left: 50px;" class="nav-item">
+                    <a class="nav-link" href="#Community-section">Community</a>
+                </li>
+                <a href="signup.html" class="btn btn-warning" style="margin-left: 150px; border-radius: 30px; font-weight: 500; width: 150px;">Register / Login</a>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    <!-- navbar ends -->
+
+     <!-- hero starts -->
+     <div class="container-fluid" style="height: 500px; background: linear-gradient(to bottom, #f6b704 0%, #f6c732 25%, #fee5ac 50%, #fff8e0 75%, white 100%);margin-top: 30px;">
+      <div class="row align-items-center" style="height: 80%;">
+          <!-- Left Column -->
+          <div class="col-lg-6 text-center text-lg-start px-4">
+              <h2 class="text-frank">The Fastest and Most Precise Voice-based AI Platform</h2>
+              <h6 style="margin-left: 8%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum excepturi aliquid odit esse consectetur.</h6>
+              <button id="get-trial-btn" type="button" class="btn btn-warning mt-3" style="border-radius: 30px; font-weight: 500; width: 160px; height: 50px;margin-left: 10%;">
+                  Get a Free Trial
+              </button>
+          </div>
+          <!-- Right Column -->
+          <div class="col-lg-6 text-center">
+              <img src="freepik__background__84168.png" class="img-fluid" style="height: 500px;" alt="AI Tool Image" />
+          </div>
+      </div>
+  </div>
+  
+        <!-- hero ends -->
+
+      <div class="ai-feature" style="background:#fff;background-size:cover;background-position:center;">
+        <div class="widget-span widget-type-cell wrapper">
+          <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+              <div class="section-heading align-center" style="margin-left:auto;margin-right:auto;margin-bottom:-80px;">
+                <div style="margin-left: 80px;margin-right: 80px; padding-bottom: 55px; padding-left: 20px; padding-right: 20px;">
+        <h1 class="animated-heading">
+            <span class="static-text">Transforming Customer Interaction into Exceptional</span>
+            <span class="dynamic-text">
+              AI-powered Experience
+            </span>
+            <span class="static-text"> with the Most Precise Voice-based AI Tool</span>
+        </h1>
+      <br></div>
+      <p>&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 2 starts -->
+       <div id="resource-section">
+      <div class="container-fluid stats-section">
+        <div class="container">
+            <div  class="row align-items-center">
+                <div class="col-md-2 stats-item">
+                    <h1>30%</h1>
+                    <p>Reduction in Operating Costs</p>
+                </div>
+                <div class="col-md-1 d-none d-md-flex justify-content-center">
+                    <div class="divider"></div>
+                </div>
+                <div class="col-md-2 stats-item">
+                    <h1>90%</h1>
+                    <p>Increase Automation Rate</p>
+                </div>
+                <div class="col-md-1 d-none d-md-flex justify-content-center">
+                    <div class="divider"></div>
+                </div>
+                <div class="col-md-3 stats-item">
+                    <h1>25%</h1>
+                    <p>Customer Satisfaction Boost</p>
+                </div>
+                <div class="col-md-1 d-none d-md-flex justify-content-center">
+                    <div class="divider"></div>
+                </div>
+            
+                <div class="col-md-2 stats-item">
+                    <h1>50%</h1>
+                    <p>Decrease in Agent Attrition</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- stection 2 ends -->
+    <div class="container-card" style="background-color: #f6b704;height: 400px;">
+      <div style="padding-top: 20px;" class="title-section">
+        <h1>What Makes VoiceBot Different</h1>
+        
+      </div>
+      <div class="card-container">
+        <div class="solution-card col-md-3" onclick="window.location.href=''">
+          <div class="solution-card-icon"><i class="bi bi-lightning-charge"></i></div>
+          <h5 style="padding-top: 10px;">Instant Policy Assistance</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="">Read More →</a>
+        </div>
+        <div class="solution-card col-md-3" onclick="window.location.href=''">
+          <div class="solution-card-icon"><i class="bi bi-person-check"></i></div>
+          <h5>Personalized Recommendations</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="">Read More →</a>
+        </div>
+        <div class="solution-card col-md-3" onclick="window.location.href=''">
+          <div class="solution-card-icon"><i class="bi bi-clock"></i></div>
+          <h5>24/7 Support with Human-Like Interaction</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- card section starts -->
+     <div id="Community-section">
+    <div class="container py-5">
+      <div class="row align-items-center chat-section">
+          <!-- Left Column -->
+          <div class="col-md-6">
+              <div class="chat-box">
+                  <img src="Innovation.gif" alt="Innovation Animation" style="width: 80%; border-radius: 15px;">
+              </div>
+          </div>
+          <!-- Right Column -->
+          <div class="col-md-6 info-section">
+              <h4>Understand</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aperiam, optio dolorem mollitia repellendus alias, eaque ex voluptas dignissimos magni aspernatur ducimus ullam nihil quod debitis a. Repellendus, nemo dolores.</p>
+              <a href="#">Learn more about Conversational Intelligence →</a>
+          </div>
+      </div>
+
+      <div  class="row align-items-center chat-section">
+        <!-- Left Column -->
+         <div class="col-md-6 info-section">
+            <h4>Analyze</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia non cum sit ea natus illum omnis in reiciendis ut eius mollitia, perferendis rem quaerat dicta provident minus numquam eum nesciunt?</p>
+            <a href="#">Learn more about Conversational Intelligence →</a>
+        </div>
+       
+        <!-- Right Column -->
+         <div class="col-md-6">
+            <div class="chat-box">
+                <img src="Chat bot.gif" alt="Innovation Animation" style="width: 80%; border-radius: 15px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center chat-section">
+      <!-- Left Column -->
+      <div class="col-md-6">
+          <div class="chat-box">
+              <img src="Chat bot (1).gif" alt="Innovation Animation" style="width: 80%; border-radius: 15px;">
+          </div>
+      </div>
+      <!-- Right Column -->
+      <div class="col-md-6 info-section">
+          <h4>Believe</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem maxime aliquam non unde porro laborum numquam autem nulla, vel quam, modi deserunt! Dolorem, repellendus aut et sequi fugit iure odit!</p>
+          <a href="#">Learn more about Conversational Intelligence →</a>
+      </div>
+  </div>
+  </div>
+     </div>
+<!-- card section ends -->
+
+
+<!-- footer starts -->
+  <footer class="text-center text-lg-start text-white" style="background-color: black"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Company name
+            </h6>
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore tempora, voluptatum doloribus non ullam reiciendis quo, nostrum, ut quae aut numquam dolorum totam aspernatur asperiores nam eius dolor dicta?
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-white">Bootstrap Angular</a>
+            </p>
+          </div> -->
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-1 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold"> Useful links</h6>
+            <p><a href="UI.html" class="text-light">Home</a></p>
+          
+            <p>
+              <a href="signup.html" class="text-light">Register</a>
+            </p>
+            <p>
+              <a href="help.html" class="text-light">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> City, NY 10012 Street, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> dummy@prushal.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +01 23456788</p>
+            <p><i class="fas fa-print mr-3"></i> +01 23456789</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+          
+            <div class="p-3"> © 2020 Copyright:
+              <a class="text-white" href="">dummy@prushal.com</a>
+            </div>
+       
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          
+            <a
+               class="btn btn-outline-light btn-floating m-2"
+               class="text-white"
+               role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <a
+               class="btn btn-outline-light btn-floating m-2"
+               class="text-white"
+               role="button"><i class="fab fa-twitter"></i></a>
+
+            <a
+               class="btn btn-outline-light btn-floating m-2"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i ></a>
+
+            <a
+               class="btn btn-outline-light btn-floating m-2"
+               class="text-white"
+               role="button"><i class="fab fa-instagram"></i></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+
+<!-- footer ends -->
+</body>
+<script >
+  document.getElementById('get-trial-btn').addEventListener('click', function() {
+    // Redirect to Interface.html when the button is clicked
+    window.location.href = 'Interface.html'; });
+</script>
+</html>
