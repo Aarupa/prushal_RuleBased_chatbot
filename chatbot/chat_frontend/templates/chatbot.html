@@ -230,18 +230,43 @@
                     messages.appendChild(botMessage);
                 });
         }
+        //This extra code is added as first output voice was not coming of neerja
+        let selectedVoice = null; // Store the preferred voice globally
+
+        function loadVoices() {
+            const voices = window.speechSynthesis.getVoices();
+            selectedVoice = voices.find(voice => voice.name.toLowerCase().includes('neerja'));
+
+            if (!selectedVoice) {
+                console.warn("Neerja voice not found. Using default voice.");
+            }
+        }
+
+        // Load voices when available
+        if (window.speechSynthesis.getVoices().length > 0) {
+            loadVoices();
+        } else {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+        }
 
         function speakResponse(text) {
             const speech = new SpeechSynthesisUtterance(text);
-            speech.lang = 'en-US';
+            speech.lang = 'en-IN';
+
+            if (selectedVoice) {
+                speech.voice = selectedVoice;
+            }
+
             speech.onstart = () => {
-                isBotSpeaking = true; // Set flag when bot starts speaking
-                if (isListening) recognition.stop(); // Stop microphone while bot is speaking
+                isBotSpeaking = true;
+                if (isListening) recognition.stop();
             };
+
             speech.onend = () => {
-                isBotSpeaking = false; // Reset flag after speaking
-                if (isListening) recognition.start(); // Restart microphone after bot finishes speaking
+                isBotSpeaking = false;
+                if (isListening) recognition.start();
             };
+
             window.speechSynthesis.speak(speech);
         }
 
