@@ -112,7 +112,7 @@ def listen():
         command = input("Press Enter to toggle mic or type 'exit' to quit: ").strip().lower()
         
         if command == "exit":
-            print("Exiting the chat. Goodbye!")
+            print("Exiting the chat. Goodbye!")#hjhhjhjhjh
             break 
         
         mic_active = not mic_active 
