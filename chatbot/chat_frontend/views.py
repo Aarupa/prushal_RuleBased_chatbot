@@ -201,6 +201,8 @@ def listen():
         if command == "exit" or command == "bye" or command == "bye bye":
             conversation_history.clear() # Clear history
             print("Exiting the chat. Goodbye!")
+        if command == "exit":
+            print("Exiting the chat. Goodbye!")
             break 
         
         mic_active = not mic_active 
