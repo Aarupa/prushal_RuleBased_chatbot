@@ -7,7 +7,11 @@
                 "about indeed inspiring",
                 "company overview"
             ],
-            "response": "Indeed Inspiring Infotech is a technology and training company specializing in IT solutions, corporate training, and academic collaborations to bridge the gap between industry and academia."
+            "responses": [
+                "Indeed Inspiring Infotech is a tech-driven company specializing in IT solutions and training.",
+                "We are a company dedicated to bridging the gap between industry and academia through technology.",
+                "Indeed Inspiring provides IT training and corporate solutions to help businesses and individuals grow."
+            ]
         },
         {
             "question": "Where is Indeed Inspiring Infotech located?",
@@ -16,7 +20,11 @@
                 "address",
                 "office"
             ],
-            "response": "The company is located at Flat No 401, Vrindavan Society, Near Samindradevi Market, BAIF Road, Wagholi, Pune MH - 412207."
+            "responses": [
+                "The company is located at Flat No 401, Vrindavan Society, Near Samindradevi Market, BAIF Road, Wagholi, Pune MH - 412207.",
+                "You can find our office in Wagholi, Pune, Maharashtra, providing easy access for students and professionals alike.",
+                "Our headquarters are situated in Pune, serving clients and learners across India."
+            ]
         },
         {
             "question": "What is the mission of Indeed Inspiring Infotech?",
@@ -25,7 +33,11 @@
                 "vision",
                 "goal"
             ],
-            "response": "The mission is to empower individuals and organizations with industry-relevant skills and training to enhance their professional growth."
+            "responses": [
+                "The mission is to empower individuals and organizations with industry-relevant skills and training to enhance their professional growth.",
+                "We aim to bridge the skill gap between academia and industry through expert-led training programs.",
+                "Our vision is to create a highly skilled workforce through innovative learning solutions."
+            ]
         },
         {
             "question": "Is Indeed Inspiring Infotech a registered company?",
@@ -34,7 +46,11 @@
                 "legal status",
                 "company registration"
             ],
-            "response": "Yes, Indeed Inspiring Infotech is a registered entity providing IT and training services."
+            "responses": [
+                "Yes, Indeed Inspiring Infotech is a registered entity providing IT and training services.",
+                "We are a legally registered company in India, ensuring compliance with industry standards.",
+                "As a recognized business, we operate under legal regulations to deliver high-quality training solutions."
+            ]
         },
         {
             "question": "What industries does Indeed Inspiring Infotech cater to?",
@@ -43,16 +59,24 @@
                 "sectors",
                 "clients"
             ],
-            "response": "The company caters to IT, education, corporate, and skill development industries."
+            "responses": [
+                "The company caters to IT, education, corporate, and skill development industries.",
+                "Our services benefit professionals and students in IT, education, and corporate sectors.",
+                "We work with businesses across multiple industries, offering tailored training solutions."
+            ]
         },
-        {
+{
             "question": "What services does Indeed Inspiring Infotech provide?",
             "keywords": [
                 "services",
                 "offerings",
                 "what services"
             ],
-            "response": "The company offers IT training, corporate training, fresher induction programs, and skill development programs."
+            "responses": [
+                "The company offers IT training, corporate training, fresher induction programs, and skill development programs.",
+                "Our services include professional IT training, career development, and hands-on industry workshops.",
+                "We specialize in corporate training, industry certifications, and skill enhancement programs for professionals and students."
+            ]
         },
         {
             "question": "Does Indeed Inspiring Infotech provide online training?",
@@ -61,7 +85,11 @@
                 "virtual training",
                 "remote learning"
             ],
-            "response": "Yes, the company offers both online and offline training programs."
+            "responses": [
+                "Yes, the company offers both online and offline training programs.",
+                "We provide flexible learning options, including virtual instructor-led and self-paced online courses.",
+                "Our training is available in various formats, including live online sessions and in-person workshops."
+            ]
         },
         {
             "question": "What types of corporate training does Indeed Inspiring Infotech offer?",
@@ -70,7 +98,11 @@
                 "company training",
                 "professional development"
             ],
-            "response": "They provide customized corporate training programs, including fresher induction, upskilling, and leadership development."
+            "responses": [
+                "They provide customized corporate training programs, including fresher induction, upskilling, and leadership development.",
+                "Our corporate training solutions are designed to enhance workforce productivity and skill development.",
+                "We offer specialized programs covering technology, management, and leadership skills for corporate clients."
+            ]
         },
         {
             "question": "Does Indeed Inspiring Infotech offer placement assistance?",
@@ -79,7 +111,11 @@
                 "job assistance",
                 "career support"
             ],
-            "response": "Yes, they provide placement assistance to individuals who complete their training programs."
+            "responses": [
+                "Yes, they provide placement assistance to individuals who complete their training programs.",
+                "Our training includes career guidance and job placement support to help students transition into the workforce.",
+                "We collaborate with hiring partners to provide job opportunities for our trained professionals."
+            ]
         },
         {
             "question": "What is the duration of the training programs?",
@@ -88,16 +124,24 @@
                 "course length",
                 "training period"
             ],
-            "response": "The duration varies depending on the course, ranging from a few weeks to several months."
+            "responses": [
+                "The duration varies depending on the course, ranging from a few weeks to several months.",
+                "Our programs are designed to fit different learning needs, from short-term certifications to in-depth courses.",
+                "Each course has a flexible timeline, allowing learners to progress at their own pace."
+            ]
         },
-        {
+{
             "question": "Are the training programs certified?",
             "keywords": [
                 "certification",
                 "certified courses",
                 "accreditation"
             ],
-            "response": "Yes, the training programs come with certifications that are recognized by the industry."
+            "responses": [
+                "Yes, the training programs come with certifications that are recognized by the industry.",
+                "We provide industry-accredited certifications upon successful course completion.",
+                "Our certified programs help professionals enhance their credentials and career prospects."
+            ]
         },
         {
             "question": "Does Indeed Inspiring Infotech provide hands-on training?",
@@ -106,7 +150,11 @@
                 "practical training",
                 "live projects"
             ],
-            "response": "Yes, the training programs include live projects and hands-on experience."
+            "responses": [
+                "Yes, the training programs include live projects and hands-on experience.",
+                "We focus on practical learning with real-world case studies and industry projects.",
+                "Our training is designed to provide students with practical exposure to industry challenges."
+            ]
         },
         {
             "question": "What is the fresher induction program?",
@@ -115,7 +163,11 @@
                 "new graduates",
                 "entry-level training"
             ],
-            "response": "It is a training program designed to help fresh graduates transition into the corporate world."
+            "responses": [
+                "It is a training program designed to help fresh graduates transition into the corporate world.",
+                "Our fresher induction program equips new employees with the necessary skills to start their careers.",
+                "The program includes technical training, soft skills development, and corporate readiness modules."
+            ]
         },
         {
             "question": "Does Indeed Inspiring Infotech offer weekend batches?",
@@ -124,7 +176,11 @@
                 "flexible timing",
                 "part-time courses"
             ],
-            "response": "Yes, they offer flexible batch timings, including weekend batches."
+            "responses": [
+                "Yes, they offer flexible batch timings, including weekend batches.",
+                "Our training programs are designed to accommodate working professionals with weekend classes.",
+                "We provide multiple scheduling options, including weekend and evening batches for convenience."
+            ]
         },
         {
             "question": "Can I get a demo session before enrolling?",
@@ -133,16 +189,24 @@
                 "trial class",
                 "free demo"
             ],
-            "response": "Yes, demo sessions are available for prospective students."
+            "responses": [
+                "Yes, demo sessions are available for prospective students.",
+                "We offer free trial sessions to help students understand our training methodology.",
+                "Before enrolling, you can attend a demo class to experience our teaching approach."
+            ]
         },
-        {
+{
             "question": "What courses does Indeed Inspiring Infotech offer?",
             "keywords": [
                 "courses",
                 "training programs",
                 "learning modules"
             ],
-            "response": "They offer courses in Data Science, Machine Learning, Business Analytics, and other IT-related domains."
+            "responses": [
+                "They offer courses in Data Science, Machine Learning, Business Analytics, and other IT-related domains.",
+                "Our training catalog includes AI, cloud computing, and full-stack development courses.",
+                "We provide skill-based courses ranging from beginner to advanced levels in multiple IT fields."
+            ]
         },
         {
             "question": "Are the courses updated with industry trends?",
@@ -151,7 +215,11 @@
                 "updated courses",
                 "latest curriculum"
             ],
-            "response": "Yes, the courses are regularly updated to align with industry requirements."
+            "responses": [
+                "Yes, the courses are regularly updated to align with industry requirements.",
+                "We continuously revise our curriculum to incorporate the latest technological advancements.",
+                "Our courses are designed based on real-world industry needs and emerging trends."
+            ]
         },
         {
             "question": "What is the fee structure for the courses?",
@@ -160,7 +228,11 @@
                 "course fees",
                 "pricing"
             ],
-            "response": "The fee structure varies depending on the course. You can contact the company for detailed information."
+            "responses": [
+                "The fee structure varies depending on the course. You can contact the company for detailed information.",
+                "We offer flexible payment plans and discounts for group enrollments.",
+                "Course fees depend on duration, content, and certification options. Contact us for a customized quote."
+            ]
         },
         {
             "question": "Do you offer courses for beginners?",
@@ -169,7 +241,11 @@
                 "entry-level",
                 "no experience"
             ],
-            "response": "Yes, they offer beginner-friendly courses with no prior experience required."
+            "responses": [
+                "Yes, they offer beginner-friendly courses with no prior experience required.",
+                "Our programs are structured to accommodate learners with little to no technical background.",
+                "We have specially designed courses to help beginners start their journey in IT and software development."
+            ]
         },
         {
             "question": "What is the eligibility criteria for enrolling in courses?",
@@ -178,16 +254,25 @@
                 "requirements",
                 "prerequisites"
             ],
-            "response": "Eligibility varies by course, but most programs require basic knowledge of IT concepts."
+            "responses": [
+                "Eligibility varies by course, but most programs require basic knowledge of IT concepts.",
+                "While some courses have prerequisites, we also offer foundation courses for beginners.",
+                "Certain advanced courses may require prior experience or relevant academic qualifications."
+            ]
         },
-        {
+
+{
             "question": "Do you provide study materials for the courses?",
             "keywords": [
                 "study materials",
                 "resources",
                 "learning materials"
             ],
-            "response": "Yes, study materials and resources are provided to all enrolled students."
+            "responses": [
+                "Yes, study materials and resources are provided to all enrolled students.",
+                "Our courses include comprehensive study materials, e-books, and reference guides.",
+                "We offer lecture notes, assignments, and project work as part of the learning package."
+            ]
         },
         {
             "question": "Are there any prerequisites for advanced courses?",
@@ -196,7 +281,11 @@
                 "advanced courses",
                 "prior knowledge"
             ],
-            "response": "Yes, advanced courses may require prior knowledge or completion of beginner-level courses."
+            "responses": [
+                "Yes, advanced courses may require prior knowledge or completion of beginner-level courses.",
+                "Some courses require a basic understanding of programming or IT concepts.",
+                "Prerequisites vary per course, but we provide guidance to help students choose the right course level."
+            ]
         },
         {
             "question": "Do you offer courses in collaboration with universities?",
@@ -205,7 +294,11 @@
                 "academic partnerships",
                 "college programs"
             ],
-            "response": "Yes, they collaborate with universities to provide academic training programs."
+            "responses": [
+                "Yes, they collaborate with universities to provide academic training programs.",
+                "Our courses are designed in partnership with educational institutions for industry-aligned learning.",
+                "We work with universities to offer skill-based training and certification programs for students."
+            ]
         },
         {
             "question": "What is the mode of delivery for the courses?",
@@ -214,7 +307,11 @@
                 "online classes",
                 "offline training"
             ],
-            "response": "Courses are delivered through online platforms, in-person classes, or hybrid models."
+            "responses": [
+                "Courses are delivered through online platforms, in-person classes, or hybrid models.",
+                "We offer flexible training options, including live virtual sessions and classroom training.",
+                "Our learning approach includes self-paced, instructor-led, and blended formats."
+            ]
         },
         {
             "question": "Can I access recorded sessions after the course ends?",
@@ -223,16 +320,24 @@
                 "course access",
                 "post-course materials"
             ],
-            "response": "Yes, recorded sessions are available for a limited time after the course completion."
+            "responses": [
+                "Yes, recorded sessions are available for a limited time after the course completion.",
+                "We provide access to course recordings so students can revisit key concepts.",
+                "Learners can review recorded sessions to reinforce their understanding and practice."
+            ]
         },
-        {
+{
             "question": "What is included in corporate training programs?",
             "keywords": [
                 "corporate training",
                 "company programs",
                 "employee development"
             ],
-            "response": "Corporate training includes skill development, leadership training, and technical upskilling."
+            "responses": [
+                "Corporate training includes skill development, leadership training, and technical upskilling.",
+                "Our programs focus on improving workforce productivity through targeted training.",
+                "We offer customized corporate training modules to align with business goals and industry needs."
+            ]
         },
         {
             "question": "Can corporate training be customized?",
@@ -241,7 +346,11 @@
                 "tailored programs",
                 "company-specific training"
             ],
-            "response": "Yes, the programs are tailored to meet the specific needs of the organization."
+            "responses": [
+                "Yes, the programs are tailored to meet the specific needs of the organization.",
+                "We offer fully customizable training solutions for companies of all sizes.",
+                "Our corporate training can be adapted to different industries, employee roles, and business requirements."
+            ]
         },
         {
             "question": "Do you provide training for large organizations?",
@@ -250,7 +359,11 @@
                 "enterprise training",
                 "corporate clients"
             ],
-            "response": "Yes, they cater to organizations of all sizes, including large enterprises."
+            "responses": [
+                "Yes, they cater to organizations of all sizes, including large enterprises.",
+                "We have experience in delivering large-scale corporate training programs.",
+                "Our training solutions are scalable to accommodate businesses of different sizes."
+            ]
         },
         {
             "question": "What is the duration of corporate training programs?",
@@ -259,7 +372,11 @@
                 "program length",
                 "corporate course duration"
             ],
-            "response": "The duration depends on the organization's requirements and can range from a few days to several weeks."
+            "responses": [
+                "The duration depends on the organization's requirements and can range from a few days to several weeks.",
+                "We offer flexible corporate training durations to suit business needs.",
+                "Training programs can be customized for short-term or long-term engagements based on company goals."
+            ]
         },
         {
             "question": "Do you provide training for non-IT professionals?",
@@ -268,16 +385,24 @@
                 "non-technical programs",
                 "cross-functional training"
             ],
-            "response": "Yes, they offer training programs for non-IT professionals as well."
+            "responses": [
+                "Yes, they offer training programs for non-IT professionals as well.",
+                "Our courses include business skills, management training, and soft skills development.",
+                "We provide training in leadership, communication, and industry-specific non-technical skills."
+            ]
         },
-        {
+{
             "question": "What is the cost of corporate training programs?",
             "keywords": [
                 "cost",
                 "pricing",
                 "training fees"
             ],
-            "response": "The cost varies based on the program's scope and duration. You can request a quote from the company."
+            "responses": [
+                "The cost varies based on the program's scope and duration. You can request a quote from the company.",
+                "Our corporate training pricing is flexible and depends on the number of participants and content customization.",
+                "Contact us for a detailed cost breakdown based on your training requirements."
+            ]
         },
         {
             "question": "Do you offer virtual corporate training?",
@@ -286,7 +411,11 @@
                 "remote corporate training",
                 "online sessions"
             ],
-            "response": "Yes, virtual training options are available for remote teams."
+            "responses": [
+                "Yes, virtual training options are available for remote teams.",
+                "We provide interactive online corporate training sessions to accommodate remote employees.",
+                "Our corporate training can be delivered through live virtual sessions, webinars, and recorded modules."
+            ]
         },
         {
             "question": "What industries do you provide corporate training for?",
@@ -295,7 +424,11 @@
                 "sectors",
                 "corporate clients"
             ],
-            "response": "They provide training for IT, healthcare, finance, education, and other industries."
+            "responses": [
+                "They provide training for IT, healthcare, finance, education, and other industries.",
+                "Our corporate training solutions cater to a wide range of industries, including technology and business sectors.",
+                "We design industry-specific training programs to meet the unique needs of different business domains."
+            ]
         },
         {
             "question": "Do you provide post-training support for corporates?",
@@ -304,7 +437,11 @@
                 "follow-up",
                 "training resources"
             ],
-            "response": "Yes, post-training support and resources are provided to ensure effective implementation."
+            "responses": [
+                "Yes, post-training support and resources are provided to ensure effective implementation.",
+                "We offer continuous learning support, including follow-up sessions and learning materials.",
+                "Our corporate training programs include ongoing mentorship and post-training assistance."
+            ]
         },
         {
             "question": "Can you conduct training at our company location?",
@@ -313,16 +450,24 @@
                 "company location",
                 "in-house training"
             ],
-            "response": "Yes, they offer on-site training programs at the company's location."
+            "responses": [
+                "Yes, they offer on-site training programs at the company's location.",
+                "We provide in-house corporate training at your preferred location for convenience.",
+                "Our trainers can visit your office and conduct sessions tailored to your team's requirements."
+            ]
         },
-        {
+{
             "question": "How does Indeed Inspiring Infotech collaborate with colleges?",
             "keywords": [
                 "college collaboration",
                 "academic partnerships",
                 "university programs"
             ],
-            "response": "They collaborate with colleges to provide training programs that align with industry requirements."
+            "responses": [
+                "They collaborate with colleges to provide training programs that align with industry requirements.",
+                "Our academic partnerships help bridge the skill gap between students and the corporate world.",
+                "We work closely with universities to integrate industry-relevant curriculum and certifications."
+            ]
         },
         {
             "question": "What are the benefits of academic collaboration?",
@@ -331,7 +476,11 @@
                 "college benefits",
                 "student advantages"
             ],
-            "response": "Benefits include enhanced employability, industry-relevant skills, and bridging the gap between academia and industry."
+            "responses": [
+                "Benefits include enhanced employability, industry-relevant skills, and bridging the gap between academia and industry.",
+                "Students gain hands-on experience, industry exposure, and placement opportunities through our collaborations.",
+                "Our programs help colleges improve their placement records by equipping students with real-world skills."
+            ]
         },
         {
             "question": "Do you provide certifications for college students?",
@@ -340,7 +489,11 @@
                 "student certificates",
                 "academic certifications"
             ],
-            "response": "Yes, students receive certifications upon completing the training programs."
+            "responses": [
+                "Yes, students receive certifications upon completing the training programs.",
+                "Our certifications are industry-recognized and enhance students' job prospects.",
+                "We provide verifiable certificates that add value to students' academic credentials."
+            ]
         },
         {
             "question": "Can colleges request customized training programs?",
@@ -349,7 +502,11 @@
                 "tailored training",
                 "college-specific courses"
             ],
-            "response": "Yes, they offer customized training programs based on the college's curriculum and requirements."
+            "responses": [
+                "Yes, they offer customized training programs based on the college's curriculum and requirements.",
+                "We design tailor-made courses to align with the specific academic needs of educational institutions.",
+                "Our training modules can be adapted to suit different university programs and student levels."
+            ]
         },
         {
             "question": "Do you organize workshops for college students?",
@@ -358,16 +515,24 @@
                 "student events",
                 "college workshops"
             ],
-            "response": "Yes, they organize workshops, seminars, and hackathons for students."
+            "responses": [
+                "Yes, they organize workshops, seminars, and hackathons for students.",
+                "We conduct interactive workshops to help students gain hands-on learning experience.",
+                "Our college workshops cover various IT and business-related topics to enhance student knowledge."
+            ]
         },
-        {
+{
             "question": "What types of events does Indeed Inspiring Infotech organize?",
             "keywords": [
                 "events",
                 "workshops",
                 "hackathons"
             ],
-            "response": "They organize workshops, hackathons, seminars, and virtual meetups."
+            "responses": [
+                "They organize workshops, hackathons, seminars, and virtual meetups.",
+                "Our events include hands-on training sessions, expert talks, and networking opportunities.",
+                "We conduct various technical and non-technical events to enhance industry exposure."
+            ]
         },
         {
             "question": "Are the events open to the public?",
@@ -376,7 +541,11 @@
                 "open workshops",
                 "community events"
             ],
-            "response": "Some events are open to the public, while others are exclusive to enrolled students or corporate clients."
+            "responses": [
+                "Some events are open to the public, while others are exclusive to enrolled students or corporate clients.",
+                "We conduct both invite-only and open-for-all events, depending on the topic and target audience.",
+                "Our public events provide a great opportunity for networking and learning."
+            ]
         },
         {
             "question": "Do you charge for attending events?",
@@ -385,7 +554,11 @@
                 "registration cost",
                 "workshop pricing"
             ],
-            "response": "Some events are free, while others may have a registration fee."
+            "responses": [
+                "Some events are free, while others may have a registration fee.",
+                "We offer free introductory workshops, while advanced sessions may require a fee.",
+                "Pricing for events varies based on the type, duration, and resources provided."
+            ]
         },
         {
             "question": "Can I participate in hackathons organized by Indeed Inspiring Infotech?",
@@ -394,7 +567,11 @@
                 "coding competitions",
                 "tech events"
             ],
-            "response": "Yes, hackathons are open to students, professionals, and enthusiasts."
+            "responses": [
+                "Yes, hackathons are open to students, professionals, and enthusiasts.",
+                "We welcome participants of all skill levels to join our hackathons and showcase their talents.",
+                "Our hackathons provide a platform for learning, innovation, and collaboration among tech enthusiasts."
+            ]
         },
         {
             "question": "Do you provide certificates for event participation?",
@@ -403,9 +580,13 @@
                 "participation certificates",
                 "workshop certificates"
             ],
-            "response": "Yes, participants receive certificates for attending workshops and events."
+            "responses": [
+                "Yes, participants receive certificates for attending workshops and events.",
+                "We provide verifiable digital and printed certificates for event attendees.",
+                "Certificates are awarded to participants to recognize their efforts and achievements in the event."
+            ]
         },
-        {
+{
             "question": "How can I contact Indeed Inspiring Infotech?",
             "keywords": [
                 "contact",
@@ -413,7 +594,11 @@
                 "phone",
                 "email"
             ],
-            "response": "You can contact them via email at info@indeedinspiring.com or call (+91) 9850113269."
+            "responses": [
+                "You can contact them via email at info@indeedinspiring.com or call (+91) 9850113269.",
+                "Feel free to reach out through our official email or visit our office in Pune.",
+                "For any inquiries, contact us via phone or email—we’d be happy to assist!"
+            ]
         },
         {
             "question": "Do you have a customer support team?",
@@ -422,7 +607,11 @@
                 "helpdesk",
                 "support team"
             ],
-            "response": "Yes, they have a dedicated customer support team to assist with queries."
+            "responses": [
+                "Yes, they have a dedicated customer support team to assist with queries.",
+                "Our support team is available to answer your questions and provide guidance.",
+                "We offer responsive customer support to ensure smooth learning and business interactions."
+            ]
         },
         {
             "question": "What are the working hours of Indeed Inspiring Infotech?",
@@ -431,7 +620,11 @@
                 "office timings",
                 "business hours"
             ],
-            "response": "The working hours are typically from 9:00 AM to 6:00 PM IST, Monday to Friday."
+            "responses": [
+                "The working hours are typically from 9:00 AM to 6:00 PM IST, Monday to Friday.",
+                "Our office operates during standard business hours, but training sessions may have flexible timings.",
+                "For inquiries outside office hours, you can reach us via email or our website contact form."
+            ]
         },
         {
             "question": "Can I visit the office for inquiries?",
@@ -440,7 +633,11 @@
                 "in-person inquiries",
                 "location visit"
             ],
-            "response": "Yes, you can visit their office in Pune during working hours."
+            "responses": [
+                "Yes, you can visit their office in Pune during working hours.",
+                "Our office is open for visitors, and our team will be happy to assist you with your inquiries.",
+                "Feel free to drop by our location for any assistance regarding our training programs or services."
+            ]
         },
         {
             "question": "Do you have a social media presence?",
@@ -449,16 +646,24 @@
                 "LinkedIn",
                 "Facebook"
             ],
-            "response": "Yes, you can follow them on LinkedIn, Facebook, and other social media platforms for updates."
+            "responses": [
+                "Yes, you can follow them on LinkedIn, Facebook, and other social media platforms for updates.",
+                "Stay connected with us through social media for news, updates, and event announcements.",
+                "We actively engage with our audience on LinkedIn, Facebook, and other networks—follow us to stay updated!"
+            ]
         },
-        {
+{
             "question": "What is Prushal Technology Pvt. Ltd.?",
             "keywords": [
                 "prushal technology",
                 "about prushal",
                 "company overview"
             ],
-            "response": "Prushal Technology Pvt. Ltd. is a Pune-based IT and software services company offering ERP software, web and mobile app development, cloud solutions, and digital marketing."
+            "responses": [
+                "Prushal Technology Pvt. Ltd. is a Pune-based IT and software services company offering ERP software, web and mobile app development, cloud solutions, and digital marketing.",
+                "We are a technology-driven company providing innovative IT solutions and business automation services.",
+                "Prushal Technology specializes in digital transformation, helping businesses optimize their operations through technology."
+            ]
         },
         {
             "question": "Where is Prushal Technology Pvt. Ltd. located?",
@@ -467,7 +672,11 @@
                 "prushal address",
                 "office address"
             ],
-            "response": "The company is located at Flat No. 401, Vrindavan Society, Near Samindradevi Market, BAIF Road, Wagholi, Pune MH - 412207."
+            "responses": [
+                "The company is located at Flat No. 401, Vrindavan Society, Near Samindradevi Market, BAIF Road, Wagholi, Pune MH - 412207.",
+                "Our headquarters are situated in Pune, Maharashtra, serving clients across multiple industries.",
+                "Visit our Pune office for consultations, business inquiries, and service discussions."
+            ]
         },
         {
             "question": "What services does Prushal Technology provide?",
@@ -476,7 +685,11 @@
                 "offerings",
                 "what services"
             ],
-            "response": "Prushal Technology offers ERP software, website and mobile app development, big data solutions, cluster setup, digital marketing, and corporate training."
+            "responses": [
+                "Prushal Technology offers ERP software, website and mobile app development, big data solutions, cluster setup, digital marketing, and corporate training.",
+                "Our services include end-to-end IT solutions, including cloud services, business intelligence, and application development.",
+                "We provide comprehensive IT consulting and development solutions tailored to business needs."
+            ]
         },
         {
             "question": "What industries does Prushal Technology cater to?",
@@ -485,7 +698,11 @@
                 "prushal clients",
                 "target sectors"
             ],
-            "response": "Prushal caters to industries like IT, education, corporate businesses, and skill development sectors."
+            "responses": [
+                "Prushal caters to industries like IT, education, corporate businesses, and skill development sectors.",
+                "We work with clients in various sectors, including technology, finance, healthcare, and retail.",
+                "Our solutions are designed for diverse industries, ensuring technological advancements and business automation."
+            ]
         },
         {
             "question": "What is the mission of Prushal Technology?",
@@ -494,72 +711,127 @@
                 "vision",
                 "goal"
             ],
-            "response": "The mission of Prushal Technology is to manifest automation and transformation for business improvement and individual empowerment."
+            "responses": [
+                "The mission of Prushal Technology is to manifest automation and transformation for business improvement and individual empowerment.",
+                "We strive to enhance business efficiency through innovative IT solutions and services.",
+                "Our goal is to drive digital transformation and enable businesses to leverage technology effectively."
+            ]
         },
-        {
-            "question": "What is the vision of Prushal Technology?",
-            "keywords": [
-                "prushal vision",
-                "future goals"
-            ],
-            "response": "Prushal Technology aims to be recognized as the best solution provider for businesses and individuals worldwide."
-        },
-        {
-            "question": "Is Prushal Technology a registered company?",
-            "keywords": [
-                "prushal registration",
-                "legal status",
-                "company registration"
-            ],
-            "response": "Yes, Prushal Technology Pvt. Ltd. is a registered IT services company operating since 2017."
-        },
-        {
-            "question": "Does Prushal Technology provide cloud services?",
-            "keywords": [
-                "cloud services",
-                "cloud computing",
-                "hosting"
-            ],
-            "response": "Yes, Prushal Technology offers cloud solutions, including AWS, GoDaddy hosting, and other infrastructure solutions."
-        },
-        {
-            "question": "What is the size of Prushal Technology Pvt. Ltd.?",
-            "keywords": [
-                "company size",
-                "number of employees"
-            ],
-            "response": "Prushal Technology has an employee strength of 11-50 professionals specializing in IT solutions."
-        },
-        {
-            "question": "How can I contact Prushal Technology Pvt. Ltd.?",
-            "keywords": [
-                "prushal contact",
-                "phone number",
-                "email"
-            ],
-            "response": "You can contact them via phone at (+91) 9762203269 or visit their official website at http://www.prushal.com."
-        },
-        {
-            "question": "Does Prushal Technology have a LinkedIn profile?",
-            "keywords": [
-                "prushal linkedin",
-                "social media",
-                "business profile"
-            ],
-            "response": "Yes, you can follow Prushal Technology on LinkedIn at https://in.linkedin.com/company/prushal-technology-pvt-ltd for updates and job postings."
-        },
-        {
-            "question": "Does Prushal Technology offer internships?",
-            "keywords": [
-                "prushal internships",
-                "training programs"
-            ],
-            "response": "Yes, Prushal Technology provides internships and corporate training programs in IT and software development."
-        },
-        {
-            "question": "Farewell message",
-            "keywords": ["bye", "exit", "goodbye"],
-            "response": "Ok bye! Have a good day!"
-        }
+{
+    "question": "What is the vision of Prushal Technology?",
+    "keywords": [
+        "prushal vision",
+        "future goals"
+    ],
+    "responses": [
+        "Prushal Technology aims to be recognized as the best solution provider for businesses and individuals worldwide.",
+        "We envision a world where technology enables businesses to achieve maximum efficiency and growth.",
+        "Our vision is to empower organizations and individuals with cutting-edge technology solutions for a better tomorrow."
+    ]
+},
+{
+    "question": "Is Prushal Technology a registered company?",
+    "keywords": [
+        "prushal registration",
+        "legal status",
+        "company registration"
+    ],
+    "responses": [
+        "Yes, Prushal Technology Pvt. Ltd. is a registered IT services company operating since 2017.",
+        "Prushal Technology Pvt. Ltd. is fully registered under the legal framework and operates as a professional IT service provider.",
+        "Indeed, Prushal Technology is a legally recognized company, established and registered as Prushal Technology Pvt. Ltd. in 2017."
+    ]
+},
+{
+    "question": "Does Prushal Technology provide cloud services?",
+    "keywords": [
+        "cloud services",
+        "cloud computing",
+        "hosting"
+    ],
+    "responses": [
+        "Yes, Prushal Technology offers cloud solutions, including AWS, GoDaddy hosting, and other infrastructure solutions.",
+        "Prushal Technology provides comprehensive cloud computing services, covering hosting and cloud infrastructure management.",
+        "We offer a range of cloud-based solutions tailored to businesses' hosting and scalability needs, leveraging platforms like AWS."
+    ]
+},
+{
+    "question": "What is the size of Prushal Technology Pvt. Ltd.?",
+    "keywords": [
+        "company size",
+        "number of employees"
+    ],
+    "responses": [
+        "Prushal Technology has an employee strength of 11-50 professionals specializing in IT solutions.",
+        "The company is a small to medium-sized IT firm, with a dedicated team of 11 to 50 employees.",
+        "Prushal Technology operates with a compact but efficient team of skilled professionals, ranging between 11 and 50 employees."
+    ]
+},
+{
+    "question": "How can I contact Prushal Technology Pvt. Ltd.?",
+    "keywords": [
+        "prushal contact",
+        "phone number",
+        "email"
+    ],
+    "responses": [
+        "You can contact them via phone at (+91) 9762203269 or visit their official website at http://www.prushal.com.",
+        "For inquiries, you can reach Prushal Technology at their customer support number (+91) 9762203269 or by email through their website.",
+        "Visit Prushal Technology’s website for contact details or get in touch by calling (+91) 9762203269."
+    ]
+},
+{
+    "question": "Does Prushal Technology have a LinkedIn profile?",
+    "keywords": [
+        "prushal linkedin",
+        "social media",
+        "business profile"
+    ],
+    "responses": [
+        "Yes, you can follow Prushal Technology on LinkedIn at https://in.linkedin.com/company/prushal-technology-pvt-ltd for updates and job postings.",
+        "Prushal Technology maintains an active LinkedIn profile. Connect with us for company news and career opportunities.",
+        "Find Prushal Technology on LinkedIn and stay updated with the latest developments and employment opportunities."
+    ]
+},
+{
+    "question": "Does Prushal Technology offer internships?",
+    "keywords": [
+        "prushal internships",
+        "training programs"
+    ],
+    "responses": [
+        "Yes, Prushal Technology provides internships and corporate training programs in IT and software development.",
+        "We offer internship programs aimed at developing young professionals in the fields of IT, software engineering, and digital solutions.",
+        "Prushal Technology regularly offers internships and practical training programs for aspiring tech enthusiasts in various IT domains."
+    ]
+},
+{
+    "question": "Farewell message",
+    "keywords": [
+        "bye",
+        "exit",
+        "goodbye"
+    ],
+    "responses": [
+        "Ok bye! Have a good day!",
+        "Goodbye, take care and have a wonderful day ahead!",
+        "Wishing you all the best! Farewell and have a great day!"
+    ]
+},
+{
+    "question": "Farewell message",
+    "keywords": [
+        "bye",
+        "exit",
+        "goodbye"
+    ],
+    "responses": [
+        "Ok bye! Have a good day!",
+        "Goodbye, take care and have a wonderful day ahead!",
+        "Wishing you all the best! Farewell and have a great day!"
+    ]
+}
+
+
     ]
 }

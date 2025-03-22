@@ -16,6 +16,7 @@ from django.conf import settings # type: ignore
 from django.template.loader import get_template # type: ignore
 import logging
 from django.http import HttpRequest # type: ignore
+from textblob import TextBlob
 
 json_path = os.path.join(os.path.dirname(__file__), 'content.json')
 with open(json_path, 'r') as json_data:
@@ -27,22 +28,72 @@ nltk.download('wordnet')
 sentiment_analyzer = SentimentIntensityAnalyzer()
 engine = pyttsx3.init()
 
-def get_best_match(query, choices, threshold=80):
+conversation_history = []  # Store conversation history
+
+def correct_spelling(query):
+    """Correct spelling mistakes in the user query using TextBlob."""
+    blob = TextBlob(query)
+    corrected_query = str(blob.correct())  # Get the corrected version of the query
+    return corrected_query
+
+def get_best_match(query, choices, threshold=80, min_length=2):
     """Find the best matching FAQ keyword using fuzzy string matching."""
+    # Ignore matching for very short words (likely typos, incomplete words, or greetings)
+    if len(query) < min_length:
+        return None  
+    
     best_match, score = process.extractOne(query, choices)  
-    return best_match if score >= threshold else None  
+
+    # Ensure the match is strong and not just a substring of a larger keyword
+    if score >= threshold:
+        return best_match  
+
+    return None    
+
 def classify_query(msg):
     """Classify the query as company-related (FAQ) or general conversation."""
     msg_lower = msg.lower() 
 
+    # Common acknowledgments and greetings that should NOT trigger company-related responses
+    ambiguous_words = {
+        "indeed": "Indeed! 😊",  
+        "sure": "Absolutely!",  
+        "yes": "You're right!",  
+        "okay": "Alright!",  
+        "alright": "Got it!",  
+        "correct": "That's correct!",  
+        "right": "Exactly!",  
+        "true": "That's true!",  
+        "inspiring": "That's inspiring! What motivates you?",  
+    }
+    
+    if msg_lower in ambiguous_words:
+        return "ambiguous", ambiguous_words[msg_lower]  # Return a meaningful response
+
+    # Ignore fuzzy matching for very short or incomplete words
+    if len(msg_lower) < 2:
+        return "general", None
+    
     keywords = [keyword for faq in faq_data['faqs'] for keyword in faq['keywords']]
     best_match = get_best_match(msg_lower, keywords) 
+
+    corrected_msg = correct_spelling(msg_lower)
+
+    if corrected_msg != msg_lower:
+        for faq in faq_data['faqs']:
+            if best_match in faq['keywords']:
+                suggested_question = faq['question']
+                response = random.choice(faq['responses'])
+                return "company", f"Did you mean '{suggested_question}'?\n {response}" 
+    
     if best_match:
         for faq in faq_data['faqs']:
             if best_match in faq['keywords']:
-                return "company", faq['response'] 
-    
+                response = random.choice(faq['responses'])
+                return "company", response
+
     return "general", None  
+
 def analyze_sentiment(msg):
     """Analyze the sentiment of a user message using VaderSentiment."""
     score = sentiment_analyzer.polarity_scores(msg)['compound'] 
@@ -51,6 +102,20 @@ def analyze_sentiment(msg):
     elif score <= -0.5:
         return "negative" 
     return "neutral" 
+
+def get_contextual_response(msg):
+    """Check if the message relates to previous interactions and respond accordingly."""
+
+    msg_lower = msg.lower().strip()
+    
+    # Avoid single words triggering full past responses
+    if len(msg_lower.split()) < 2:
+        return None  
+
+    for prev_query, prev_response in reversed(conversation_history):
+        if msg_lower in prev_query.lower():
+            return random.choice(["As I mentioned earlier, ", "Like I said before, ", "Previously, I mentioned that "]) + prev_response
+    return None
 
 def generate_nlp_response(msg):
     """Generate a basic NLP response for general conversation."""
@@ -62,10 +127,17 @@ def generate_nlp_response(msg):
     elif "how are you" in msg.lower():
         return random.choice(["I'm doing great, thanks for asking! How about you?", "I'm good! Hope you're having a great day too."])
     
+    elif msg.lower() in ["great","great!", "good","good!", "awesome","awesome!", "fantastic","fantastic!", "amazing", "amazing!"]:
+        return random.choice(["Glad to hear that! 😊 What’s on your mind?", 
+                              "That's awesome! How can I assist you today?", 
+                              "Great! Let me know if you need any help."])
+    
+    
     elif "thank you" in msg.lower() or "thanks" in msg.lower():
         return random.choice(["You're very welcome!", "Anytime! Glad I could help."])
   
     elif msg.lower() in ["bye", "exit", "goodbye"]:
+        conversation_history.clear() # Clear history
         return "Ok bye! Have a good day!"
 
     else:
@@ -78,10 +150,23 @@ def get_response(request):
         data = json.loads(request.body)
         user_message = data.get('prompt', '')
         if user_message:
+            # Clear history if user is ending the conversation
+            if user_message.lower() in ["bye", "exit", "goodbye"]:
+                conversation_history.clear()
+                return JsonResponse({'text': "Ok bye! Have a good day!"})
+
+            contextual_response = get_contextual_response(user_message)
+            if contextual_response:
+                return JsonResponse({'text': contextual_response})
+            
             category, response = classify_query(user_message)
-            if category == "company" and response:
+            if category == "company" or category == "ambiguous"  and response:
+                conversation_history.append((user_message, response)) # Store conversation history
                 return JsonResponse({'text': response})
+            
+            
             response = generate_nlp_response(user_message)
+            conversation_history.append((user_message, response)) # Store conversation history
             return JsonResponse({'text': response})
     return JsonResponse({'text': 'Invalid request'}, status=400)
 
@@ -93,10 +178,12 @@ def speak(text):
 def preprocess_recognized_text(text):
     """Correct common misinterpretations in recognized speech."""
     corrections = {
-        "crushal": "prushal", 
-        "india": "indeed",
-        "ended": "indeed"
-    }
+    "crushal": "prushal", 
+    "india": "indeed",
+    "ended": "indeed",
+    "inspiron": "inspiring",
+    "inspire ring": "inspiring"
+}
     words = text.split()
     corrected_words = [corrections.get(word.lower(), word) for word in words]
     return " ".join(corrected_words)
@@ -111,8 +198,11 @@ def listen():
     while True:
         command = input("Press Enter to toggle mic or type 'exit' to quit: ").strip().lower()
         
+        if command == "exit" or command == "bye" or command == "bye bye":
+            conversation_history.clear() # Clear history
+            print("Exiting the chat. Goodbye!")
         if command == "exit":
-            print("Exiting the chat. Goodbye!")#hjhhjhjhjh
+            print("Exiting the chat. Goodbye!")
             break 
         
         mic_active = not mic_active 
@@ -129,7 +219,8 @@ def listen():
                         user_message = recognizer.recognize_google(audio) 
                         user_message = preprocess_recognized_text(user_message)
                         print(f"You said: {user_message}")
-                        if "bye" in user_message.lower() or "exit" in user_message.lower():
+                        if "bye" in user_message.lower() or "exit" in user_message.lower() or "bye bye" in user_message.lower():
+                            conversation_history.clear() # Clear history
                             print("Exiting the chat. Goodbye!")
                             mic_active = False  
                             break
